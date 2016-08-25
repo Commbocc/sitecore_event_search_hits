@@ -1,0 +1,13 @@
+@if (listHit.ResultItem.Fields["Event Start"] != null)
+{
+	<small class="text-muted">
+			@Sitecore.DateUtil.IsoDateToDateTime(listHit.ResultItem.Fields["Event Start"].ToString()).ToString("MMMM dd, yyyy")
+	</small>
+}
+<!-- add this conditional statement immediatly AFTER the following existing anchor elements, see README for visual -->
+
+<!-- near line 65 -->
+<i class="@Model.SuggestedResult.Icon"></i><a href="@Model.SuggestedResult.ResultUrl.Url" title="@Model.SuggestedResult.PageTitle" target="@Model.SuggestedResult.ResultUrl.Target">@Model.SuggestedResult.PageTitle</a>
+  
+<!-- near line 161 -->
+<a href="@listHit.ResultUrl.Url" title="@listHit.PageTitle" target="@listHit.ResultUrl.Target">@listHit.ResultUrl.Url</a>

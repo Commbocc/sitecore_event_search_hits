@@ -4,7 +4,7 @@
 			@Sitecore.DateUtil.IsoDateToDateTime(listHit.ResultItem.Fields["Event Start"].ToString()).ToString("MMMM dd, yyyy")
 	</small>
 }
-<!-- add this conditional statement immediatly AFTER the following existing anchor elements, see README for visual -->
+<!-- add this conditional statement immediatly AFTER the following existing anchor elements. Be sure to swap out listHit with Model where aprropriate. See README for visual -->
 
 <!-- near line 65 -->
 <i class="@Model.SuggestedResult.Icon"></i><a href="@Model.SuggestedResult.ResultUrl.Url" title="@Model.SuggestedResult.PageTitle" target="@Model.SuggestedResult.ResultUrl.Target">@Model.SuggestedResult.PageTitle</a>
